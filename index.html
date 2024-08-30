@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD2.0</title>
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/7f3f9b3f8f.js" crossorigin="anonymous"></script>
+    <!-- x-icon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +24,6 @@
                 extend: {
                     colors: {
                         primary: "#FA8405",
-                        secondary: "#FFF",
                         body: "#191718",
                         accent: "#FBC0A8",
                         rgb: "rgba(18, 18, 18, 0.60)"
@@ -34,8 +37,21 @@
     </script>
 </head>
 
-<body>
-
+<body class="font-inter bg-body">
+    <header class="w-screen h-screen text-white">
+        <nav class="container mx-auto flex justify-between items-center p-10">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+                <span>BD2.0</span>
+            </a>
+            <ul class="flex gap-10 justify-center items-center text-xl">
+                <li class="hover:text-primary transition-colors ease-in-out duration-300"><a href="index.html">Home</a></li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300"><a href="#">History</a></li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300"><a href="#">Contributors</a></li>
+                <li class="bg-primary text-body px-5 py-3 rounded-md font-semibold"><a href="#">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>
